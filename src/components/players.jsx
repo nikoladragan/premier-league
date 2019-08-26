@@ -14,11 +14,7 @@ const useStyles = makeStyles(theme => {
 
 
 const Players = ({ playerData, setActivePlayer, activePlayer, lastWeek }) => {
-	// console.log('players rerendered');
-
 	const classes = useStyles();
-
-
 
 	return (
 		<Table size="small">

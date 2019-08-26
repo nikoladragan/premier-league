@@ -5,10 +5,11 @@ import Players from './players';
 import PickWeek from './pickWeek';
 import PlayerTable from './playerTable';
 import PickedTable from './pickedTable';
+import Points from './points';
+import { getPoints } from '../helpers';
 
 
 function AppContainer() {
-	// console.log('container rerendered');
 	const [ playerData, setPlayerData ] = useState(players);
 	const [ playerPicks, setPlayerPicks ] = useState([]);
 	const [ activeWeek, setActiveWeek ] = useState([]);
@@ -56,11 +57,6 @@ function AppContainer() {
 		}
 	};
 
-	const getPoints = (i1, i2) => {
-		const points = 7 - Math.abs(i1 - i2);
-		return Math.max(points, 0);
-	};
-
 	const getPreviousWeek = () => {
 		const newPlayerData = JSON.parse(JSON.stringify(playerData));
 		const lastWeek = weeks[activeWeekId - 1];
@@ -96,8 +92,8 @@ function AppContainer() {
 							<Grid item xs={3}>
 								<PlayerTable playerPicks={playerPicks} />
 							</Grid>
-							<Grid>
-								x
+							<Grid item xs={1}>
+								<Points team1={playerPicks} team2={activeWeek} />
 							</Grid>
 							<Grid item xs={3}>
 								<PickedTable activeWeek={activeWeek} />

@@ -724,6 +724,28 @@ const weeks = [
 		clubs.Southampton,
 		clubs.Watford,
 	],
+	[
+		clubs.Liverpool,
+		clubs.ManchesterCity,
+		clubs.Arsenal,
+		clubs.LeicesterCity,
+		clubs.ManchesterUnited,
+		clubs.Burnley,
+		clubs.TottenhamHotspur,
+		clubs.BrightonHoveAlbion,
+		clubs.SheffieldUnited,
+		clubs.CrystalPalace,
+		clubs.Bournemouth,
+		clubs.Everton,
+		clubs.Chelsea,
+		clubs.WestHamUnited,
+		clubs.WolverhamptonWanderers,
+		clubs.AstonVilla,
+		clubs.NorwichCity,
+		clubs.Southampton,
+		clubs.NewcastleUnited,
+		clubs.Watford,
+	],
 ];
 
 const teams = {

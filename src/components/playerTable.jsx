@@ -17,8 +17,6 @@ const useStyles = makeStyles(() => {
 
 
 const PlayerTable = ({ playerPicks }) => {
-	// console.log('player table rerendrered');
-
 	const classes = useStyles();
 	return (
 		<Table size="small">

@@ -21,9 +21,6 @@ const useStyles = makeStyles((theme) => {
 const Arrow = ({ lastWeek, name, index }) => {
 	const classes = useStyles();
 
-	console.log(ArrowDropUpIcon, SvgIcon);
-	// {comparePlayers(d.name, index)}
-
 	const comparePlayers = (name, index) => {
 		let place = 0;
 
