@@ -13,7 +13,7 @@ function AppContainer() {
 	const [ playerData, setPlayerData ] = useState(players);
 	const [ playerPicks, setPlayerPicks ] = useState([]);
 	const [ activeWeek, setActiveWeek ] = useState([]);
-	const [ activeWeekId, setActiveWeekId ] = useState(0);
+	const [ activeWeekId, setActiveWeekId ] = useState(weeks.length - 1);
 
 	const [ activePlayer, setActivePlayer ] = useState('');
 
